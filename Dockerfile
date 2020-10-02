@@ -1,4 +1,5 @@
 FROM golang:alpine as builder
+ENV GO111MODULE=on
 
 WORKDIR /build
 ADD . /build/
